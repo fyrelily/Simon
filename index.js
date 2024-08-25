@@ -3,7 +3,7 @@
 
 // While loop to keep game going?
 var gamePattern = [];
-var simonSays = ""
+var simonSays = "";
 var userClickPattern = [];
 
 var level = 0;
