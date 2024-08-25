@@ -23,7 +23,7 @@ $(document).on("keypress", function (){
 }
 });
 
-$("h1").on("touch", function (){
+$("h1, h2").on("touch", function (){
     if (!started){
         $("h2").remove();
         $("#level-title").text("Level " + level);
@@ -75,7 +75,7 @@ function checkAnswer(currentLevel) {
       started = false;
       gamePattern = [];
       level = 0;
-      $("h1").append("<h2 id='restart-title'>Press Any Key to Play Again.</h2>")
+      $("h1").append("<h2 id='restart-title'>Press Any Key or Press Here Play Again.</h2>")
 
     }
 
