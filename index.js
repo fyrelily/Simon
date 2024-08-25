@@ -23,6 +23,16 @@ $(document).on("keypress", function (){
 }
 });
 
+$("h1").on("click", function (){
+    if (!started){
+        $("h2").remove();
+        $("#level-title").text("Level " + level);
+        patternGenerator();
+        started = true;
+        
+}
+});
+
 $(".btn").click(function(event){
     
     var playerColorChoice = event.target.id;
