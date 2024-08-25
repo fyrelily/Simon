@@ -23,7 +23,7 @@ $(document).on("keypress", function (){
 }
 });
 
-$("h1, h2").on("touch", function (){
+$("h1, h2").touch(function (){
     if (!started){
         $("h2").remove();
         $("#level-title").text("Level " + level);
