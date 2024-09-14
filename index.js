@@ -23,7 +23,7 @@ $(document).on("keypress", function (){
 }
 });
 
-$("h1, h2").touch(function (){
+$("h1, h2").click(function (){
     if (!started){
         $("h2").remove();
         $("#level-title").text("Level " + level);
@@ -33,7 +33,7 @@ $("h1, h2").touch(function (){
 }
 });
 
-$(".btn").click(function(event){
+$(".btn").on("click",function(event){
     
     var playerColorChoice = event.target.id;
     userClickPattern.push(playerColorChoice);
